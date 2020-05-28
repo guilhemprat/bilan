@@ -55,6 +55,7 @@ img{
 }
 .titretexte{font-style: italic;font-size:1.6vw;line-height: 120%;}
 .titre{font-size:2.5vw;line-height: 120%;}
+.titre2{font-size:2.5vw;line-height: 120%;}
 .note{font-size:1vw;}
 
 #menu{
@@ -69,23 +70,22 @@ img{
   padding: 1%;
   text-align: left;
 }
-.titre:hover{margin-left: 3%;font-style: italic;}
+.titre:hover{margin-left: 3%;font-style: italic;cursor: pointer;}
 
 #close {
   position: fixed;
-  font-size:3vw;
+  font-size:1.5vw;
   color:white;
   font-family:'Amiri', serif;
   z-index: 102;
   padding: 1%;
-  top: -3%;
+  top: -1%;
   right: 0;
   text-align: right;
   display: none;
   mix-blend-mode: difference;
-  -webkit-transform:scaleY(1.5); -moz-transform:scaleY(1.5); -o-transform:scaleY(1.5);
 }
-#close:hover {font-style: italic;}
+#close:hover {font-style: italic;cursor: pointer;}
 
 a{text-decoration: none;color: white;}
 a:hover{opacity: 0.85;}
@@ -93,19 +93,19 @@ a:hover{opacity: 0.85;}
 </head>
 <body>
 
-<div id="close" onclick="menu(event)">×</div>
+<div id="close" onclick="menu(event)">[⨉]</div>
 
 <div id="menu">
-  <div class="bilan" id="titrenxs">⎧2019-2020⎫ Bilan Semestre2 ⎫ Guilhem Prat ⎫ </div>
+  <div class="bilan" id="titrenxs">⎧2019-2020⎫ Bilan Semestre2 ⎫ Guilhem Prat ⎫</div>
   <div class="bilan" id="titrenxs">•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••</div>
-  <div class="titre" id="titrenxs" onclick="lire_stage()">Stage NXS</div>
-  <div class="titre" id="titrerain" onclick="lire_rain()">Left rain, right sand, in the middle possibilities</div>
-  <div class="titre" id="titrelunette" onclick="lire_while(event)">While the fields are burning</div>
-  <div class="titre" id="titreentrenous" onclick="lire_entrenous(event)">entre nous</div>
-  <div class="titre" id="titreatst" onclick="lire_atst(event)">At the same time</div>
-  <div class="titre" id="titreentrenous" onclick="lire_apart(event)">Forensic Evidence</div> 
-  <div class="titre" id="titreentrenous" onclick="lire_virus(event)">Nature Is Healing</div>
-  <div class="titre" id="titreentrenous" onclick="lire_app(event)">Pédaler dans le sable</div> 
+  <div class="titre2" id="titrenxs" onclick="lire_stage()">⎣<span class="titre">Stage NXS</span></div>
+  <div class="titre2" id="titrerain" onclick="lire_rain()">⎣<span class="titre">Left rain, right sand, in the middle possibilities</span></div>
+  <div class="titre2" id="titrelunette" onclick="lire_while(event)">⎣<span class="titre">While the fields are burning</span></div>
+  <div class="titre2" id="titreentrenous" onclick="lire_entrenous(event)">⎣<span class="titre">entre nous</span></div>
+  <div class="titre2" id="titreatst" onclick="lire_atst(event)">⎣<span class="titre">At the same time</span></div>
+  <div class="titre2" id="titreentrenous" onclick="lire_apart(event)">⎣<span class="titre">Forensic Evidence</span></div> 
+  <div class="titre2" id="titreentrenous" onclick="lire_virus(event)">⎣<span class="titre">Nature Is Healing</span></div>
+  <div class="titre2" id="titreentrenous" onclick="lire_app(event)">⎣<span class="titre">Pédaler dans le sable</span></div> 
 </div> 
 
 <div class="container">
